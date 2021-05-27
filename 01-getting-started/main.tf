@@ -1,6 +1,25 @@
 ##############
 # Terraform
 ##############
+
+##########################################################################
+# This will create the following
+/* 
+1. Create Resource Group
+2. Create Vnet
+3. Create a subnet
+4. Create a Public IP
+5. Create a NSG ( Network Security Group )
+6. Create a NIC
+7. Connect NSG and NIC
+8. Use a plugin to generate random Text for unique storage account name
+9. Create storage account for storing boot diagnostics of a VM.
+10. Create a SSH key to inject to VM.
+11. Create a VM.
+12. Associate NIC and Storage + OS image + keys to use.
+*/
+##########################################################################
+
 terraform {
   required_providers {
     azurerm = {
